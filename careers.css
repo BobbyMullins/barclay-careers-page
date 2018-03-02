@@ -1,0 +1,44 @@
+.career-accordion {
+    background-color: #E4F1FD;
+    
+    border-bottom: 1px solid #E4F1FD;
+    border-radius: 6px; 
+    color: #4A4A4A;
+    cursor: pointer;
+    font-size: 15px;
+    height: 60px; 
+    margin-top: 30px; 
+    outline: none;
+    padding: 18px;
+    text-align: left;
+    transition: 0.4s;
+    width: 100%;
+}
+
+.active {
+    border-bottom: 1px solid #b3c6db; 
+	border-bottom-left-radius: 0px; 
+    border-bottom-right-radius: 0px;
+}
+
+.active, .career-accordion:hover {
+    background-color: #E4F1FD;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #eff7ff;
+    border-top-left-radius: 0px; 
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.icon-circle-with-plus:before {
+    color: #004B87; 
+	left: 73%; 
+    position: absolute; 
+}

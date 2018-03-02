@@ -1,0 +1,17 @@
+<div class="row">
+    <button class="career-accordion">{{this.['Title']}} | {{this.['Location']}} <span class='icon-circle-with-plus'></span></button>
+    <div class="panel">
+        <p><strong>Barclay Water Management, Inc. was founded in 1932 and is the oldest and largest employee-owned water treatment organization in North America. We manufacture a wide range of specialty treatments for controlling water chemistry in heating, cooling, process, and power generating systems. Our products and services extend the useful life of boilers, chillers, cooling towers, process heat exchangers and piping systems as well as reduce utility plan operating costs by minimizing water and energy consumption.</strong></p>
+        <p>{{this.['Overview']}}</p>
+        {% if this.Responsibilities !="" -%}
+        	<p><strong>Responsibilities include:</strong></p>
+    		<p>{{this.['Responsibilities']}}</p>
+		{% endif -%}
+        	<p><strong>Qualifications include:</strong></p>
+        	<p>{{this.['Qualifications']}}</p>
+        <p>Barclay Water Management, Inc. offers an attractive base salary plus incentive commissions, company car and expenses, and an excellent benefits package which include an ESOP (Employee Stock Ownership Plan).</p>
+        <p style="text-align: center;"><strong>Qualified candidates are encouraged to send a cover letter and resume to our Human Resources Department at careers@barclaywater.com or by Fax (617) 744-3450.</strong></p>
+        <p style="text-align: center;"><strong>An Employee Owned Company</strong></p>
+        <p style="text-align: center;"><strong>EOE/M/F/Disability/Veteran</strong></p>
+    </div>
+</div>

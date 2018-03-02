@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Careers</title>
+        <meta name="description" content="" />
+    </head>
+    <body>
+        <div class="background" style="background: linear-gradient(180deg, #00ABDF 0%, #0072BC 100%);">
+            <div class="hero hero--large" style="background-image: url('/images/content/headers/careers-banner-primary.png'); background-position: top center;">
+              <div class="hero__container">
+                <div class="row row-site column">
+                  <div class="hero__overlay">
+                    <h1 class="hero__title">Careers</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <section class="text-wrap">
+            <div class="row">
+                <div class="centered">
+                	<h2>Barclay Water Management, Inc. Careers</h2>
+                	<p>At Barclay Water Management we are always looking for talented individuals to join our team. The continued success of our water treatment business is dependent upon our ability to attract and retain the highest caliber men and women who are committed to customer satisfaction. If you are a motivated, enthusiastic individual who thrives in a work environment that encourages individual freedom and mutual respect while rewarding commitment and performance, we’d like to hear from you.</p>
+                	<p>Barclay Water Management offers a quality, stable working environment with unlimited opportunity for professional advancement. To insure we attract and retain the best of the best, we offer:</p>
+                </div>
+				<ul>
+            		<li>Competitive salaries</li>
+            		<li>Comprehensive medical, dental, Rx, disability and life insurance</li>
+            		<li>Employee Stock Ownership Plan (ESOP)</li>
+            		<li>401(k) plan</li>
+            		<li>Educational assistance</li>
+            		<li>Flexible spending accounts</li>
+            		<li>Paid holiday, vacation and sick time</li>
+            		<li>Employee assistance program</li>
+       			</ul>
+				<div class="page-divider mt8"></div>
+            </div>
+        </section>
+        <div class="background" style="background: linear-gradient(180deg, #00ABDF 0%, #0072BC 100%);">
+            <div class="hero hero--large" style="background-image: url('/images/content/headers/careers-banner-secondary.png'); background-position: top center;">
+              <div class="hero__container">
+                <div class="row row-site column">
+                  <div class="hero__overlay">
+                    <h1 class="hero__title">Open Positions</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <section class="text-wrap">
+            <div class="row">
+                <div class="centered">
+                	<h2>Job Opportunities</h2>
+                	<p>As a growing company we are always searching for the best:</p>
+                </div>
+                <ul>
+            		<li>Scientists and Engineers</li>
+            		<li>Manufacturing Production Assistants</li>
+            		<li>CDL Drivers</li>
+            		<li>Accounting and Finance Professionals</li>
+            		<li>Customer Service Representatives</li>
+            		<li>Sales Engineers</li>
+            		<li>Environmental Service Technicians</li>
+            		<li>IT Professionals</li>
+                    <li>Automation Engineers</li>
+       			</ul>
+            </div>
+			<!-- BEGIN - Open Positions Sections -->
+            {module_webapps render="item" id="25988" filter="all" resultsPerPage="500"}
+            <!-- BEGIN - Open Positions Sections -->
+
+        </section>
+        <!-- BEGIN - Contact Form Section -->
+        {% include "/_System/Includes/Modules/contact-form-section.inc" -%}
+        <!-- END - Contact Form Section -->
+        <script>
+            $(document).ready(function() {
+                var acc = document.getElementsByClassName("career-accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight){
+                      panel.style.maxHeight = null;
+                    } else {
+                      panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                  });
+                }
+            }); 
+        </script>
+    </body>
+</html>
